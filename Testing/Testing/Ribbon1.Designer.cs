@@ -38,6 +38,7 @@
             this.group1 = this.Factory.CreateRibbonGroup();
             this.button1 = this.Factory.CreateRibbonButton();
             this.button2 = this.Factory.CreateRibbonButton();
+            this.button3 = this.Factory.CreateRibbonButton();
             this.tab1.SuspendLayout();
             this.group1.SuspendLayout();
             this.SuspendLayout();
@@ -46,13 +47,15 @@
             // 
             this.tab1.ControlId.ControlIdType = Microsoft.Office.Tools.Ribbon.RibbonControlIdType.Office;
             this.tab1.Groups.Add(this.group1);
-            this.tab1.Label = "TabAddIns";
+            this.tab1.Label = "Tab-1";
             this.tab1.Name = "tab1";
             // 
             // group1
             // 
             this.group1.Items.Add(this.button1);
+            this.group1.Label = "my group";
             this.group1.Items.Add(this.button2);
+            this.group1.Items.Add(this.button3);
             this.group1.Label = "group-vikki";
             this.group1.Name = "group1";
             // 
@@ -65,6 +68,11 @@
             // 
             this.button2.Label = "button2";
             this.button2.Name = "button2";
+            // 
+            // button3
+            // 
+            this.button3.Label = "button3";
+            this.button3.Name = "button3";
             // 
             // Ribbon1
             // 
@@ -86,6 +94,7 @@
         internal Microsoft.Office.Tools.Ribbon.RibbonGroup group1;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton button1;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton button2;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton button3;
     }
 
     partial class ThisRibbonCollection
